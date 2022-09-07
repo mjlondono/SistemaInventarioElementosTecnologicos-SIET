@@ -1,0 +1,99 @@
+
+#div-up {
+    height:10vh;
+    width:auto;
+    background-color:#CC2759;
+}
+
+#div-center {
+    height:75vh;
+    width:auto;
+    background-color:#EAF0F6;
+    overflow:hidden;
+}
+
+#div-down {
+    height:10vh;
+    width:auto;
+    background-color:#CC2759;
+}
+
+  .div-flex-container {
+    display: flex;  
+    height: 75vh;  
+    background-color: #CC2759;  
+  }
+  
+ /* .flex-container > div {  
+    background-color: #EAF0F6;  
+    width: 90px;
+    margin: 2px;  
+    text-align: center;  
+    line-height: 30px;  
+    font-size: 60px;
+    flex: 1 1 200px;  
+  }*/
+
+  #div-1 {      
+    background-color: #EAF0F6; 
+    width: 20%;
+    margin: 2px;  
+    text-align: center;  
+    line-height: 30px;  
+    font-size: 20px;   
+  }
+
+  #div-2 {      
+    background-color: #EAF0F6;  
+    width: 50%;
+    margin: 2px;  
+    text-align: center;  
+    line-height: 30px;  
+    font-size: 20px;
+    flex: 1 1 200px; 
+  }
+
+  #div-3 {      
+    background-color: #EAF0F6; 
+    width: 20%;
+    margin: 2px;  
+    text-align: center;  
+    line-height: 30px;  
+    font-size: 20px; 
+  }
+
+  #div-menuPrincipal {
+    display: none;
+  }
+
+  #div-menuRegistrarUsuario {
+    display: none;
+  }
+
+  #div-menuIngresarElemento {
+    display: none;
+  }
+
+  #div-menuBuscarElemento {
+    display: none;
+  }
+
+  #div-registrarUsuario {
+    display: none;
+  }
+
+  #div-ingresarElemento {
+    display: none;
+  }
+
+  #div-buscarElemento {
+    display: none;
+  }
+
+  button {
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+  }

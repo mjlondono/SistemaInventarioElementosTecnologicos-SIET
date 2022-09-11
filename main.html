@@ -1,238 +1,346 @@
 <!doctype html>
 
-  <html>
-  <head>
-  <meta charset="utf-8">
-  <title>SIET</title>
-  <link rel="stylesheet" type="text/css" href="./main.css">
-  <script src="main.js" type="text/javascript"></script>
-  </head>
+<html>
 
-  
-  <body>
-    <div id="div-up"></div> <!--div-up-->
-    <div id="div-center">
+<head>
+    <meta charset="utf-8">
+    <title>SIET</title>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <script src="main.js" type="text/javascript"></script>
 
-        <div class="div-flex-container">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="div-up" class="col-lg-6 d-flex align-items-center gradient-custom-2">
+
+        <div id="div-titulo" class="text-white px-3 py-4 p-md-5 mx-md-4">
+            <h4 class="mb-6">Sistema para el Inventario de Elementos Tecnologicos</h4>
+        </div>
+
+    </div>
+    <!--div-up-->
+
+    <div id="div-center" class="div-flex-container">      
 
             <div id="div-1">
-                
+
                 <div id="div-menuPrincipal">
 
-                </br>
-                    <div><button onclick="registrarUsuario()">Registrar Usuario</button></div>
-                </br>
-                    <div><button onclick="ingresarElemento()">Ingresar Elemento</button></div>
-                </br>
-                    <div><button onclick="buscarElemento()">Buscar Elemento</button></div>
-                </br>
-                    <div><button onclick="cerrarSesion()">Cerrar Sesion</button></div>
-                </br>
+                    </br>
+                    </br>
+                    <div><button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
+                            onclick="registrarUsuario()">Registrar Usuario</button></div>
+                    </br>
+                    <div><button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
+                            onclick="ingresarElemento()">Ingresar Elemento</button></div>
+                    </br>
+                    <div><button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
+                            onclick="buscarElemento()">Buscar Elemento</button></div>
+                    </br>
+                    <div><button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
+                            onclick="cerrarSesion()">Cerrar Sesion</button></div>
+                    </br>
 
                 </div> <!-- div-menuPrincipal -->
 
                 <div id="div-menuRegistrarUsuario">
 
-                </br>
-                    <div><button>Guardar Usuario</button></div>
-                </br>
-                    <div><button>Limpiar Campos</button></div>
-                </br>
-                    <div><button onclick="menuPrincipal()">Regresar</button></div>
-                </br>
+                    </br>
+                    </br>
+                    <div><button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3">Guardar Usuario</button>
+                    </div>
+                    </br>
+                    <div><button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3">Limpiar Campos</button>
+                    </div>
+                    </br>
+                    <div><button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
+                            onclick="menuPrincipal()">Regresar</button></div>
+                    </br>
 
                 </div> <!-- div-menuRegistrarUsuario -->
 
                 <div id="div-menuIngresarElemento">
 
-                </br>
-                    <div><button>Guardar Elemento</button></div>
-                </br>
-                    <div><button>Limpiar Campos</button></div>
-                </br>
-                    <div><button onclick="menuPrincipal()">Regresar</button></div>
-                </br>
+                    </br>
+                    </br>
+                    <div><button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3">Guardar
+                            Elemento</button></div>
+                    </br>
+                    <div><button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3">Limpiar Campos</button>
+                    </div>
+                    </br>
+                    <div><button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
+                            onclick="menuPrincipal()">Regresar</button></div>
+                    </br>
 
                 </div> <!-- div-menuIngresarElemento -->
 
                 <div id="div-menuBuscarElemento">
 
-                </br>
-                    <div><button>Buscar Elemento</button></div>
-                </br>
-                    <div><button>Limpiar Campos</button></div>
-                </br>
-                    <div><button onclick="menuPrincipal()">Regresar</button></div>
-                </br>
+                    </br>
+                    </br>
+                    <div><button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3">Buscar Elemento</button>
+                    </div>
+                    </br>
+                    <div><button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3">Limpiar Campos</button>
+                    </div>
+                    </br>
+                    <div><button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
+                            onclick="menuPrincipal()">Regresar</button></div>
+                    </br>
 
                 </div> <!-- div-menu BuscarElemento -->
-                
+
             </div> <!-- div-1 -->
-          
-          
+
             <div id="div-2">
 
-             <div id="div-login">
+                <div id="div-login">
 
-                </br>
-                    
-                    <div>Sistema para el Inventario</div>
-                    <div>de</div>
-                    <div>Elementos Tecnologicos</div>
+                    <div class="container py-3 h-100">
+                        <div class="row d-flex justify-content-center align-items-center h-100">
+                            <div class="col col-xl-6">
+                                <div class="card" style="border-radius: 2rem;">
+                                    <div class="card-body p-4 p-lg-5 text-black">
+                                        <form>
+                                            <p>Ingresa tus datos de acceso</p>
+                                            <div class="form-outline mb-4">
+                                                
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text" id="inputGroup-sizing-default">Usuario</span>
+                                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                                        aria-describedby="inputGroup-sizing-default">
+                                                </div>
+                                            </div>
+                                            <div class="form-outline mb-4">
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text" id="inputGroup-sizing-default">Contraseña</span>
+                                                    <input type="password" class="form-control" aria-label="Sizing example input"
+                                                        aria-describedby="inputGroup-sizing-default">
+                                                </div>
+                                            </div>
+                                            <div class="text-center pt-1 mb-4 pb-1">
+                                                <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
+                                                    type="button" onclick="menuPrincipal()">Iniciar Sesion</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- div--login -->
 
-                </br>
+                <div id="div-registrarUsuario">
 
-                    <div><label for="textfield">Usuario</label></div>
-                    <div><input type="text" name="textfield" id="textfield"></div>
+                    <div class="container py-3 h-100">
+                        <div class="row d-flex justify-content-center align-items-center h-100">
+                            <div class="col col-xl-6">
+                                <form>
 
-                </br>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Cedula</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input"
+                                            aria-describedby="inputGroup-sizing-default">
+                                    </div>
 
-                    <div><label for="textfield">Contraseña</label></div>
-                    <div><input type="password" name="password" id="password"></div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Nombres</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input"
+                                            aria-describedby="inputGroup-sizing-default">
+                                    </div>
 
-                </br>
-            
-                    <div><button onclick="menuPrincipal()">Ingresar</button></div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Apellidos</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input"
+                                            aria-describedby="inputGroup-sizing-default">
+                                    </div>
 
-                </br>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Area</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input"
+                                            aria-describedby="inputGroup-sizing-default">
+                                    </div>
 
-             </div> <!-- div--login -->
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Usuario</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input"
+                                            aria-describedby="inputGroup-sizing-default">
+                                    </div>
 
-             <div id="div-registrarUsuario">
-                
-              </br>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Contraseña</span>
+                                        <input type="password" class="form-control" aria-label="Sizing example input"
+                                            aria-describedby="inputGroup-sizing-default">
+                                    </div>
 
-                <div><label for="textfield">Numero Cedula: </label>
-                    <input type="text" name="textfield" id="textfield"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
 
-              </br>
 
-                <div><label for="textfield">Nombres: </label>
-                    <input type="text" name="textfield" id="textfield"></div>
-            
-              </br>
+                </div> <!-- div-registrarUsuario -->
 
-                <div><label for="textfield">Apellidos:</label>
-                    <input type="text" name="textfield" id="textfield"></div>
-            
-              </br>
+                <div id="div-ingresarElemento">
 
-                <div><label for="textfield">Area:</label>
-                    <input type="text" name="textfield" id="textfield"></div>
-            
-              </br>
+                    <div class="container py-3 h-100">
+                        <div class="row d-flex justify-content-center align-items-center h-100">
+                            <div class="col col-xl-6">
 
-               <div><label for="textfield">Usuario:</label>
-                <input type="text" name="textfield" id="textfield"></div>
-            
-              </br>
+                                <form>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Placa</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input"
+                                            aria-describedby="inputGroup-sizing-default">
+                                    </div>
 
-               <div><label for="textfield">Contraseña:</label>
-                <input type="text" name="textfield" id="textfield"></div>
-            
-              </br>              
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input"
+                                            aria-describedby="inputGroup-sizing-default">
+                                    </div>
 
-             </div> <!-- div-registrarUsuario -->
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Marca</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input"
+                                            aria-describedby="inputGroup-sizing-default">
+                                    </div>
 
-             <div id="div-ingresarElemento">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Modelo</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input"
+                                            aria-describedby="inputGroup-sizing-default">
+                                    </div>
 
-              </br>
-                
-                <div><label for="textfield">Placa: </label>
-                  <input type="text" name="textfield" id="textfield"></div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Serial</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input"
+                                            aria-describedby="inputGroup-sizing-default">
+                                    </div>
 
-              </br>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Ubicacion</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input"
+                                            aria-describedby="inputGroup-sizing-default">
+                                    </div>
 
-              <div><label for="textfield">Nombre: </label>
-                  <input type="text" name="textfield" id="textfield"></div>
-          
-              </br>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Asignacion</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input"
+                                            aria-describedby="inputGroup-sizing-default">
+                                    </div>
 
-              <div><label for="textfield">Marca: </label>
-                  <input type="text" name="textfield" id="textfield"></div>
-          
-            </br>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Estado</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input"
+                                            aria-describedby="inputGroup-sizing-default">
+                                    </div>
 
-              <div><label for="textfield">Modelo: </label>
-                  <input type="text" name="textfield" id="textfield"></div>
-          
-            </br>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
 
-             <div><label for="textfield">Serial: </label>
-              <input type="text" name="textfield" id="textfield"></div>
-          
-            </br>
+                </div> <!-- div-ingresarElemento -->
 
-             <div><label for="textfield">Ubicacion: </label>
-              <input type="text" name="textfield" id="textfield"></div>
-          
-            </br>
-            
-               <div><label for="textfield">Asignado: </label>
-               <input type="text" name="textfield" id="textfield"></div>
-     
-            </br>
-                
-                <div><label for="textfield">Estado: </label>
-                <input type="text" name="textfield" id="textfield"></div>
-      
-             </br>
+                <div id="div-buscarElemento">
 
-             </div> <!-- div-ingresarElemento -->
+                    <div class="container py-3 h-100">
+                        <div class="row d-flex justify-content-center align-items-center h-100">
+                            <div class="col col-xl-6">
 
-             <div id="div-buscarElemento">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">Placa</span>
+                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default">
+                                </div>
 
-              </br>
+                            </div>
+                            
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Placa</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Marca</th>
+                                        <th scope="col">Modelo</th>
+                                        <th scope="col">Serial</th>
+                                        <th scope="col">Ubicacion</th>
+                                        <th scope="col">Asignacion</th>
+                                        <th scope="col">Estado</th>
+                                        <th scope="col">Editar</th>
+                                        <th scope="col">Eliminar</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Monitor</td>
+                                        <td>Dell</td>
+                                        <td>MT21F</td>
+                                        <td>fdf5445</td>
+                                        <td>Sistemas</td>
+                                        <td>Manuel Londoño</td>
+                                        <td>Asignado</td>
+                                        <td><button type="button" class="btn btn-success smallButton"
+                                                onclick="editarElemento()"></button></td>
+                                        <td><button type="button" class="btn btn-danger smallButton"
+                                                onclick="eliminarElemento()"></button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Mouse</td>
+                                        <td>Genius</td>
+                                        <td>FF77</td>
+                                        <td>565557788</td>
+                                        <td>Contabilidad</td>
+                                        <td>Jacob Thornton</td>
+                                        <td>Asignado</td>
+                                        <td><button type="button" class="btn btn-success smallButton"
+                                                onclick="editarElemento()"></button></td>
+                                        <td><button type="button" class="btn btn-danger smallButton"
+                                                onclick="eliminarElemento()"></button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Computador</td>
+                                        <td>HP</td>
+                                        <td>720</td>
+                                        <td>MCDGGH</td>
+                                        <td>Logistica</td>
+                                        <td>Larry King</td>
+                                        <td>Asignado</td>
+                                        <td><button type="button" class="btn btn-success smallButton"
+                                                onclick="editarElemento()"></button></td>
+                                        <td><button type="button" class="btn btn-danger smallButton"
+                                                onclick="eliminarElemento()"></button></td>
+                                    </tr>
+                                </tbody>
 
-                <table border="0" align="center">
-                    <tbody>
-                        <tr>
-                            <td ><div>Placa: </div></td>
-                            <td><div><input type="text" name="textfield" id="textfield"></div></td>
-                        </tr>
-                    </tbody>
-                </table> <!-- tabla1 buscar elemento -->
+                            </table> <!-- tabla buscar elemento -->
 
-              </br>
+                        </div>
+                    </div>
 
-                <table border="1" align="center">
-                    <tbody>
-                        <tr>
-                            <td><strong>Placa</strong></td>
-                            <td><strong>Nombre</strong></td>
-                            <td><strong>Marca</strong></td>
-                            <td><strong>Modelo</strong></td>
-                            <td><strong>Serial</strong></td>
-                            <td><strong>Ubicacion</strong></td>
-                            <td><strong>Asignacion</strong></td>
-                            <td><strong>Estado</strong></td>
-                            <td><strong>Editar</strong></td>
-                            <td><strong>Eliminar</strong></td>
-                        </tr>
-                        <tr>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                    </tbody>
-                </table> <!-- tabla2 buscar elemento -->
+                </div> <!-- div-buscarElemento -->
 
-             </div> <!-- div-buscarElemento -->
-            
             </div> <!-- div-2 -->
-          
-            <!--<div id="div-3"></div> div-3 -->
 
-        </div> <!-- div-flex-container -->
-     
+            <div id="div-3">
+            </div> <!-- div-3 -->
+
     </div> <!-- div-center -->
-    <div id="div-down"></div> <!-- div-down -->
-  </body>
-  </html>
+
+    <div id="div-down" class="col-lg-6 d-flex align-items-center gradient-custom-2">
+    </div> <!-- div-down -->
+
+</body>
+
+</html>

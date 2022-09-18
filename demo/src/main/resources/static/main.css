@@ -2,11 +2,11 @@
 #div-up {
     height:10vh;
     width:auto;
-    background-color:#CC2759;
+    background-color:#EAF0F6;
 }
 
 #div-center {
-    height:75vh;
+    height:80vh;
     width:auto;
     background-color:#EAF0F6;
     overflow:hidden;
@@ -15,7 +15,7 @@
 #div-down {
     height:10vh;
     width:auto;
-    background-color:#CC2759;
+    background-color:#EAF0F6;
 }
 
   .div-flex-container {

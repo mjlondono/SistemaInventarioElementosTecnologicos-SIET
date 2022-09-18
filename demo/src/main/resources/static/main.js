@@ -36,7 +36,7 @@ function cerrarSesion(){
     menu.style.display="none";
 
     menu = document.getElementById("div-login")
-    menu.style.display="inline";
+    menu.style.display="flex";
 
 }
 
@@ -50,7 +50,7 @@ function registrarUsuario(){
     menu.style.display="inline";
 
     menu = document.getElementById("div-registrarUsuario")
-    menu.style.display="inline";
+    menu.style.display="flex";
 
 }
 
@@ -64,7 +64,7 @@ function ingresarElemento(){
     menu.style.display="inline";
 
     menu = document.getElementById("div-ingresarElemento")
-    menu.style.display="inline";
+    menu.style.display="flex";
 
 }
 
@@ -78,7 +78,7 @@ function buscarElemento(){
     menu.style.display="inline";
 
     menu = document.getElementById("div-buscarElemento")
-    menu.style.display="inline";
+    menu.style.display="flex";
 
 }
 
@@ -91,3 +91,7 @@ function editarElemento(){
 
     alert("Voy Editar Este Elemento");
 }
+
+function limpiarFormulario(myform) {
+    document.getElementById(myform).reset();
+  }

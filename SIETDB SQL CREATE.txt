@@ -1,0 +1,56 @@
+CREATE DATABASE `sietdb` 
+/*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+-- sietdb.area definition
+
+CREATE TABLE `area` (
+  `id_area` int NOT NULL,
+  `nom_area` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id_area`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+-- sietdb.estado definition
+
+CREATE TABLE `estado` (
+  `id_estado` int NOT NULL,
+  `nombre_estado` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id_estado`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- sietdb.usuario definition
+
+CREATE TABLE `usuario` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `cod_funcionario_cod_funcionario` int DEFAULT NULL,
+  `contrasena` varchar(255) DEFAULT NULL,
+  `usuario` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- sietdb.funcionario definition
+
+CREATE TABLE `funcionario` (
+  `cod_funcionario` int NOT NULL,
+  `apellidos` varchar(255) DEFAULT NULL,
+  `cedula` int DEFAULT NULL,
+  `nombres` varchar(255) DEFAULT NULL,
+  `id_area_id_area` int DEFAULT NULL,
+  PRIMARY KEY (`cod_funcionario`),
+  KEY `FKtg39gnyws4wvatcn1o65h5w97` (`id_area_id_area`),
+  CONSTRAINT `FKtg39gnyws4wvatcn1o65h5w97` FOREIGN KEY (`id_area_id_area`) REFERENCES `area` (`id_area`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- sietdb.elemento definition
+
+CREATE TABLE `elemento` (
+  `placa` int NOT NULL AUTO_INCREMENT,
+  `cod_funcionario` int DEFAULT NULL,
+  `id_area` int DEFAULT NULL,
+  `id_estado` int DEFAULT NULL,
+  `marca` varchar(255) DEFAULT NULL,
+  `modelo` varchar(255) DEFAULT NULL,
+  `nombre` varchar(255) DEFAULT NULL,
+  `serial` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`placa`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

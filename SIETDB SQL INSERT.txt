@@ -1,0 +1,68 @@
+****** AREA ******
+
+INSERT INTO sietdb.area
+(id_area, nom_area)
+VALUES(1, 'Direccion');
+
+INSERT INTO sietdb.area
+(id_area, nom_area)
+VALUES(2, 'Secretaria General');
+
+INSERT INTO sietdb.area
+(id_area, nom_area)
+VALUES(3, 'Logistica');
+
+INSERT INTO sietdb.area
+(id_area, nom_area)
+VALUES(5, 'Tesoreria');
+
+INSERT INTO sietdb.area
+(id_area, nom_area)
+VALUES(4, 'Sistemas');
+
+****** ESTADO ******
+
+INSERT INTO sietdb.estado
+(id_estado, nombre_estado)
+VALUES(1, 'Asignado');
+
+INSERT INTO sietdb.estado
+(id_estado, nombre_estado)
+VALUES(2, 'No Asignado');
+
+INSERT INTO sietdb.estado
+(id_estado, nombre_estado)
+VALUES(3, 'Dado de Baja');
+
+****** Funcionario ******
+
+INSERT INTO sietdb.funcionario
+(cod_funcionario, apellidos, cedula, nombres, id_area_id_area)
+VALUES(1, 'Gacha', 4569998, 'Andrea', 1);
+
+INSERT INTO sietdb.funcionario
+(cod_funcionario, apellidos, cedula, nombres, id_area_id_area)
+VALUES(2, 'Gomez', 209989, 'Jeefry', 2);
+
+INSERT INTO sietdb.funcionario
+(cod_funcionario, apellidos, cedula, nombres, id_area_id_area)
+VALUES(3, 'Londoño', 9879242, 'Manuel', 5);
+
+****** Usuario ******
+
+INSERT INTO sietdb.usuario
+(contrasena, usuario, cod_funcionario_cod_funcionario)
+VALUES('123', '123', 1);
+
+INSERT INTO sietdb.usuario
+(contrasena, usuario, cod_funcionario_cod_funcionario)
+VALUES('456', '456', 2);
+
+INSERT INTO sietdb.usuario
+(contrasena, usuario, cod_funcionario_cod_funcionario)
+VALUES('789', '789', 3);
+
+
+
+
+
